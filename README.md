@@ -1,8 +1,10 @@
-# AngularBlogClient
+# AngularBlog
 
 This project was created using Angular 4, Node, Express and MongoDB. 
 
-## To Use
+<br />
+
+## To Use Locally
 
 ### Clone the repo
 git clone https://github.com/jackseabolt/angularblog-front.git
