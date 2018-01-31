@@ -12,7 +12,6 @@ export class ItemComponent {
     @Output() check = new EventEmitter(); 
 
     onDelete() {
-        console.log("THAT SHIT WAS EMITTED")
         this.delete.emit(); 
     }
 
