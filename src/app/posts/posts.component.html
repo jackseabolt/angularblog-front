@@ -1,8 +1,5 @@
 <div>
   <h1 class="center">Checklist</h1>
-  <div class="center posts-form-container">
-    <input class="posts-input" #input placeholder="Add item">
-    <button class="posts-submit-button" (click)="createPost(input)">Submit</button>
-  </div>
+  <item-form (submit)="createPost($event)"></item-form>
   <item *ngFor="let post of posts" [post]="post" (delete)="deletePost(post)" (check)="updatePost(post)"></item>
 </div>
