@@ -20,6 +20,10 @@
     font-size: 16px; 
 }
 
+.posts-item-text {
+    cursor: pointer; 
+}
+
 .posts-submit-button {
     padding: 8px 15px; 
     font-size: 16px; 
@@ -39,5 +43,34 @@
     border-radius: 5px;
     background-color: rgb(143, 91, 91); 
     margin: 10px; 
-    display: inline-block; 
+    float: right; 
+    cursor: pointer; 
+}
+
+.posts-check-active-button {
+    padding: 8px 15px; 
+    font-size: 16px; 
+    color: white; 
+    border: 1px solid rgb(100, 106, 165); 
+    border-radius: 5px;
+    background-color: rgb(89, 94, 143); 
+    margin: 10px; 
+    float: right; 
+    cursor: pointer; 
+}
+
+.posts-check-deactivated-button {
+    padding: 8px 15px; 
+    font-size: 16px; 
+    color: white; 
+    border: 1px solid rgb(133, 135, 156); 
+    border-radius: 5px;
+    background-color: rgb(133, 135, 156);  
+    margin: 10px; 
+    float: right; 
+    cursor: pointer; 
+}
+
+.posts-checked {
+    text-decoration: line-through; 
 }
