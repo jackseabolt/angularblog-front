@@ -12,6 +12,5 @@ export class ItemFormComponent {
     onSubmit(userInput) {
         event.preventDefault(); 
         this.submit.emit({ value: userInput.value })
-        console.log(userInput.value)
     }
 }
