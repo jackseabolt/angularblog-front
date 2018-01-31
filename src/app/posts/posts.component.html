@@ -1,0 +1,16 @@
+<div>
+  <h1 class="center">Posts</h1>
+  <div class="center posts-form-container">
+    <input class="posts-input" #input>
+    <button class="posts-submit-button" (click)="createPost(input)">Submit</button>
+  </div>
+  <div 
+    *ngFor="let post of posts"
+    class="posts-container"
+  >
+    <p>{{ post.title }}</p>
+   
+    <button class="posts-delete-button" (click)="deletePost(post)">Delete</button>
+  </div>
+
+</div>
