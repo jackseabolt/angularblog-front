@@ -1,0 +1,11 @@
+
+<div class="item-container">
+    <p class="inline-block item-text" (click)="onUpdate()" [class.item-checked]="post.checked" (click)="updatePost(post)">{{ post.title | capitalize }}</p>
+    <button class="item-delete-button" (click)="onDelete()">Delete</button>
+    <button 
+    [class.item-check-active-button]="!post.checked" 
+    [class.item-check-deactivated-button]="post.checked" 
+    (click)="onUpdate()">
+    Check
+    </button> 
+</div>

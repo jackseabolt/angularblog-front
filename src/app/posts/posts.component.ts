@@ -34,6 +34,7 @@ export class PostsComponent implements OnInit {
   }
 
   deletePost(post) {
+    console.log("GOT TO OUTTER FUNC")
     console.log(post)
     this.service.deletePost(post)
       .subscribe(res => {
@@ -52,4 +53,5 @@ export class PostsComponent implements OnInit {
         this.posts.splice(index, 1, post)
       }); 
   }
+  
 }
