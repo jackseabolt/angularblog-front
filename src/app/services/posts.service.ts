@@ -21,6 +21,7 @@ export class PostsService {
   }
 
   updatePost(post) {
+    console.log("HERE IS THE POST", post)
     return this.http.put(this.url + '/' + post.id, post)
   }
   
